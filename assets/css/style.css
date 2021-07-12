@@ -4,7 +4,7 @@ button{
 form{
     width: fit-content;
 }
-#item:placeholder{
+#item::placeholder{
     color:white;
 }
 #item{
@@ -16,11 +16,19 @@ form{
     content: 'delete';
     margin-left: 10px;
 }
-li::before{
-    content:"ttt";
+/* li::before{
+    content:"f0ec";
     margin: 0 20px 0 0;
+} */
+li:hover {
+    cursor: pointer;
+}
+
+.checked{
+    color:lightgreen;
 }
 li:hover .checked::after{
-    content: 'terminé ?';
+    content: 'delete';
     margin-left: 10px;
+
 }

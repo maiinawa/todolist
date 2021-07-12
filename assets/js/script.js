@@ -5,7 +5,7 @@ const form = document.querySelector('form');
 //add item
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-        list.innerHTML += `<li class="px-6">${item.value}</li>`
+        list.innerHTML += `<li class="px-6 pending">${item.value}</li>`
         item.value ='';
         storage();
     });
@@ -29,7 +29,7 @@ const storage = () => {
 const getvalues = () => {
     const storageContent = window.localStorage.todoList;
     if(!storageContent){
-        list.innerHTML='<li class="px-3">Double click to delete your task</li>'
+        list.innerHTML='<li class="px-6">Double click to delete your task</li>'
     } else {
         list.innerHTML=storageContent
     }
