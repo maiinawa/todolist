@@ -7,12 +7,20 @@ form{
 #item:placeholder{
     color:white;
 }
+#item{
+    padding: 0 15px;
+    outline: none;
+    color: white
+}
 .checked::after{
     content: 'delete';
     margin-left: 10px;
 }
-.li:hover .li::after{
+li::before{
+    content:"ttt";
+    margin: 0 20px 0 0;
+}
+li:hover .checked::after{
     content: 'terminé ?';
     margin-left: 10px;
-
 }

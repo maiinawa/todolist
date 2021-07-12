@@ -5,7 +5,7 @@ const form = document.querySelector('form');
 //add item
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-        list.innerHTML += `<li class="px-3">${item.value}</li>`
+        list.innerHTML += `<li class="px-6">${item.value}</li>`
         item.value ='';
         storage();
     });
