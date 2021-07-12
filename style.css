@@ -1,0 +1,18 @@
+button{
+    width: fit-content;
+}
+form{
+    width: fit-content;
+}
+#item:placeholder{
+    color:white;
+}
+.checked::after{
+    content: 'delete';
+    margin-left: 10px;
+}
+.li:hover .li::after{
+    content: 'terminé ?';
+    margin-left: 10px;
+
+}
